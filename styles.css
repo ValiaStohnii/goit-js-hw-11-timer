@@ -1,0 +1,22 @@
+body {
+  background-color: gray;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 300px;
+}
+
+.field {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-right: 40px;
+  border: solid 2px honeydew;
+  border-radius: 50%;
+  padding: 35px;
+}
