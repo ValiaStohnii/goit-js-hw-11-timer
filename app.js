@@ -24,7 +24,15 @@ class CountdownTimer{
       this.days.textContent = days;
       this.hours.textContent = hours;
       this.mins.textContent = mins;
-      this.secs.textContent = secs;        
+      this.secs.textContent = secs;
+      
+      if (deltaTime <= 0) {
+        clearInterval();
+        this.days.textContent = '0';
+        this.hours.textContent = '0';
+        this.mins.textContent = '0';
+        this.secs.textContent = '0';
+      }
     }, 1000);
   }
 
